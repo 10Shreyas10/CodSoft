@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator </title>
 </head>
-
 <body>
-    <section>
-        <div class="container">
-            <nav>
-                <h1>
-                    <span>S</span>heetal <span>S</span>adiya
-                </h1>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Trending</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <h1>Visit as a Customer</h1>
-                <h1>Go As a Friend...</h1>
-                <h2>Online Shopping For Men,Women & kids</h2>
-                <h3>Experience a World of fashion , Where Great Deals & Discounts meet your favourite brands . Best Of
-                    Brands.With the most fashionable renge of apparels, accessories and more....</h3><br>
-                <a href="" class="btn">View Full Catlogue</a>
-
-
-
-            </div>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="Shreyas" readonly>
         </div>
-    </section>
-    <footer>
-        <h1>Contact Us</h1>
-        <br>
-        <p>Gmail: sheetalsadiya@gmail.com</p>
-        <p>Mobile No: 7517750912</p>
-        <br>
-        <p>Copyright @ [Shreyas] [2023]. All Rights Reserved .
-            Unauthorized use or infrignment may result in legal action
-        </p>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="clearDisplay()">AC</button>
 
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="performOperation('*')">*</button>
 
-    </footer>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="performOperation('/')">/</button>
+        
+        
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="performOperation('+')">+</button>
+        <button onclick="performOperation('-')">-</button>
+        <button onclick="calculate()">=</button>
+       
+    </div>
+    <script src="cal.js"></script>
 </body>
-
 </html>
